@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>崔耀东 - 个人简历</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 30px;
+        }
+        .left-column {
+            width: 35%;
+            padding-right: 20px;
+            border-right: 2px solid #f0f0f0;
+        }
+        .right-column {
+            width: 65%;
+        }
+        .photo-placeholder {
+            width: 150px;
+            height: 150px;
+            background-color: #e0e0e0;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #999;
+            font-size: 14px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center top;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 5px;
+        }
+        h2 {
+            font-size: 1.4em;
+            font-weight: 400;
+            color: #34495e;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 1.2em;
+            color: #3498db;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+        .contact-info svg {
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+            fill: #34495e;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .job, .project, .publication {
+            margin-bottom: 20px;
+        }
+        .job-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+        }
+        .company-location {
+            font-weight: normal;
+            font-style: italic;
+            color: #555;
+        }
+        .date {
+            font-weight: normal;
+            font-style: italic;
+            color: #555;
+            font-size: 0.9em;
+        }
+        ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+        li {
+            margin-bottom: 8px;
+            color: #444;
+        }
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills-list li {
+            background: #eaf6ff;
+            color: #3498db;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            display: inline-block;
+            font-size: 0.9em;
+        }
+        .education-item {
+            margin-bottom: 15px;
+        }
+        .degree {
+            font-weight: bold;
+        }
+        .university {
+            font-style: italic;
+        }
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 0.9em;
+            box-shadow: 0 2px 10px rgba(52, 152, 219, 0.3);
+            transition: all 0.3s ease;
+        }
+        .back-btn:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-btn">← 返回首页</a>
+
+    <div class="container">
+        <div class="left-column">
+            <img src="public/self.png" alt="崔耀东" class="profile-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="photo-placeholder" style="display: none;">
+                <span>照片</span>
+            </div>
+            
+            <div class="section contact-info">
+                <h3>联系方式</h3>
+                <p>
+                    <svg viewBox="0 0 24 24"><path d="M20,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6A2,2 0 0,0 20,4M20,8L12,13L4,8V6L12,11L20,6V8Z" /></svg>
+                    treedy2022@icloud.com
+                </p>
+                <p>
+                    <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12C20,13.24 19.62,14.4 19,15.41L15.41,19C14.4,19.62 13.24,20 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12.5,7V12.5L17,14.92L16.25,16.17L11,13V7H12.5Z" /></svg>
+                    上海，中国
+                </p>
+                <p>
+                    <svg viewBox="0 0 24 24"><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                    男 | 28岁 | 2年工作经验
+                </p>
+            </div>
+
+            <div class="section">
+                <h3>技能专长</h3>
+                <ul class="skills-list">
+                    <li>大语言模型 (LLM)</li>
+                    <li>PyTorch</li>
+                    <li>TensorFlow</li>
+                    <li>PaddlePaddle</li>
+                    <li>TensorRT</li>
+                    <li>RAG检索增强</li>
+                    <li>向量数据库 (Milvus)</li>
+                    <li>全栈开发</li>
+                    <li>Vue.js</li>
+                    <li>FastAPI</li>
+                    <li>SQLAlchemy</li>
+                    <li>Docker & Kubernetes</li>
+                    <li>自然语言处理</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>教育背景</h3>
+                <div class="education-item">
+                    <p class="degree">硕士 · 电子信息工程</p>
+                    <p class="university">同济大学</p>
+                    <p class="date">2020 - 2023</p>
+                </div>
+                <div class="education-item">
+                    <p class="degree">本科 · 通信工程</p>
+                    <p class="university">广东工业大学</p>
+                    <p class="date">2015 - 2019</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>语言能力</h3>
+                <ul class="skills-list">
+                    <li>中文（母语）</li>
+                    <li>英语（CET-6）</li>
+                    <li>日语（N3）</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <h1>崔耀东</h1>
+            <h2>深度学习算法工程师</h2>
+
+            <div class="section">
+                <h3>个人优势</h3>
+                <p>
+                    我熟悉 Transformer 架构及其衍生模型和大模型预训练及微调技术。我的研究在开源数据集上达到 SOTA，并在 IEEE 期刊发表，获27次引用。我热衷开源，对 AI 充满热情。在工作中，我展现了全栈开发能力，处理大数据，响应云服务，并有独立完成前后端分离项目的经验。在百度智能云/思否黑客马拉松中获奖，我能与团队高效合作，推进项目成功，并持续探索算法优化。
+                </p>
+            </div>
+
+            <div class="section">
+                <h3>工作经历</h3>
+                <div class="job">
+                    <div class="job-title">
+                        <span>深度学习算法工程师</span>
+                        <span class="date">2023.07 - 至今</span>
+                    </div>
+                    <div class="company-location">SGS通标标准技术服务有限公司</div>
+                    <ul>
+                        <li>在机器学习领域，进行基于 LLM 和传统 NLP 技术的全栈开发，包括文本分类、词嵌入、情感分类和命名实体识别。</li>
+                        <li>利用 PyTorch、PaddlePaddle、TensorFlow、TensorRT 等机器学习框架复现前沿学术成果。</li>
+                        <li>构建十亿级数据库条目的 RAG 搜索增强和语义向量检索服务，集群化部署 Milvus DB 服务。</li>
+                        <li>设计和实施基于 Vue和 FastAPI 的大模型业务服务，包括前端设计、数据库设计、后端 API 开发，以及 Docker和 Kubernetes 的容器化部署和集群管理。</li>
+                        <li>在百度智能云/思否干帆大模型平台黑客马拉松中独立完成需求分析、前后端分离架构设计和开发。</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <div class="job-title">
+                        <span>自然语言处理算法实习生</span>
+                        <span class="date">2022.07 - 2022.09</span>
+                    </div>
+                    <div class="company-location">联易融数字科技集团有限公司</div>
+                    <ul>
+                        <li>参与了 OCR 智能合同解析项目，通过 OCR 技术和自然语言处理技术，实现智能化的合同内容解析。</li>
+                        <li>通过提供批跑和单元测试脚本，以及设计规则兜底算法，显著提高了 NER 模型的准确率和鲁棒性。</li>
+                        <li>成功对原始语料进行清洗和格式化，整理并优化了金融 SaaS 领域的专业词典。</li>
+                        <li>通过改进特征提取和特征工程的方法，有效提升了 NER 核心要素提取的准确率。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>项目经历</h3>
+                <div class="project">
+                    <div class="job-title">
+                        <span>基于 RAG 的语义匹配学术人才推荐系统</span>
+                        <span class="date">2024.02 - 2024.03</span>
+                    </div>
+                    <ul>
+                        <li>负责对十亿级传统数据库条目进行 RAG 搜索增强，通过集群化部署 Milvus DB 服务，完成了全栈推理建库和完整数据迁移、关联。</li>
+                        <li>使用 TensorRT 部署线上静态图 Text Embedding 稳定推理服务，确保了服务的高稳定性和低延迟。</li>
+                        <li>基于 TF-IDF和 Text Embedding 的两路召回机制，以及 int 8句嵌入量化技术，有效提升了召回质量和速度。</li>
+                        <li>通过技术优化，实现了毫秒级云服务响应，稳定 QPS，保证了高召回质量。</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <div class="job-title">
+                        <span>AI-Mask 即时通信语言润色工具（获奖项目）</span>
+                        <span class="date">2023.11</span>
+                    </div>
+                    <ul>
+                        <li>在百度智能云/思否千帆大模型平台黑客马拉松中荣获二等奖。</li>
+                        <li>通过前后端分离架构设计和快速开发部署，缩短了开发周期，提高了开发效率。</li>
+                        <li>前端使用 Vue.js 构建的用户界面直观易用，后端 FastAPI 的高性能确保了应用的快速响应。</li>
+                        <li>作为即时通信语言润色工具，有效提升了用户在各种即时通信场景下的语言表达能力。</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <div class="job-title">
+                        <span>Happy June 高考志愿推荐系统</span>
+                        <span class="date">2023.05 - 2023.06</span>
+                    </div>
+                    <ul>
+                        <li>负责使用Selenium框架技术爬取2018-2023年全国高考志愿数据，确保数据的完整性和准确性。</li>
+                        <li>利用Streamlit实现最小化demo，完成基于省份、年份、分数、位次等条件的基础推荐服务。</li>
+                        <li>优化后端处理逻辑，实现毫秒级响应；优化线上分析算法，实现秒级响应。</li>
+                        <li>负责项目的小型业务部署和服务上线，确保系统稳定运行。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>论文发表及开源工作</h3>
+                <div class="publication">
+                    <div class="job-title">
+                        <span>TransNet: 基于Transformer的端到端高精度有损压缩算法</span>
+                        <span class="date">2021.11 - 2022.02</span>
+                    </div>
+                    <ul>
+                        <li>第一作者，论文发表在 <strong>IEEE Wireless Communications Letters</strong> 期刊，获得27次引用。</li>
+                        <li>负责使用标准 Transformer 架构作为基本模型，开发端到端的高精度有损压缩算法。</li>
+                        <li>在 COST 2100开源信道数据集上进行模型训练和测试，在8/10的指标下达到了 SOTA 水平。</li>
+                        <li>受邀担任 IEEE TWC、WCL、CL 三个期刊的审稿人，负责该研究方向的学术评议工作。</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html> 
