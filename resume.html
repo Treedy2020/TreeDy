@@ -58,7 +58,7 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         h1, h2, h3, h4 {
-            color: #2c3e50;
+            color: #1a4a00;
             margin-top: 0;
         }
         h1 {
@@ -68,14 +68,14 @@
         h2 {
             font-size: 1.4em;
             font-weight: 400;
-            color: #34495e;
-            border-bottom: 2px solid #3498db;
+            color: #2d5a00;
+            border-bottom: 2px solid #76B900;
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
         h3 {
             font-size: 1.2em;
-            color: #3498db;
+            color: #76B900;
             border-bottom: 1px solid #eee;
             padding-bottom: 5px;
             margin-top: 25px;
@@ -90,7 +90,7 @@
             width: 16px;
             height: 16px;
             margin-right: 10px;
-            fill: #34495e;
+            fill: #2d5a00;
         }
         .section {
             margin-bottom: 25px;
@@ -128,13 +128,27 @@
             padding: 0;
         }
         .skills-list li {
-            background: #eaf6ff;
-            color: #3498db;
+            background: #e8f5d0;
+            color: #76B900;
             padding: 5px 10px;
             border-radius: 5px;
             margin-bottom: 5px;
             display: inline-block;
             font-size: 0.9em;
+        }
+        .skills-category {
+            margin-bottom: 20px;
+        }
+        .skills-category h4 {
+            color: #76B900;
+            font-size: 1em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #e8f5d0;
+        }
+        .skills-category:last-child {
+            margin-bottom: 0;
         }
         .education-item {
             margin-bottom: 15px;
@@ -146,15 +160,15 @@
             font-style: italic;
         }
         .link {
-            color: #3498db;
+            color: #76B900;
             text-decoration: none;
             font-weight: 500;
             transition: all 0.3s ease;
             border-bottom: 1px solid transparent;
         }
         .link:hover {
-            color: #2980b9;
-            border-bottom: 1px solid #2980b9;
+            color: #5a8c00;
+            border-bottom: 1px solid #5a8c00;
             text-decoration: none;
         }
         .link-icon {
@@ -181,12 +195,12 @@
         }
         .external-link:hover {
             background: #e9ecef;
-            border-color: #3498db;
+            border-color: #76B900;
             transform: translateY(-1px);
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         .citation-badge {
-            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            background: linear-gradient(135deg, #76B900, #4a7c00);
             color: white;
             padding: 3px 8px;
             border-radius: 12px;
@@ -194,16 +208,139 @@
             font-weight: 600;
             margin-left: 8px;
             display: inline-block;
-            box-shadow: 0 2px 4px rgba(231, 76, 60, 0.3);
+            box-shadow: 0 2px 4px rgba(118, 185, 0, 0.3);
             animation: pulse-glow 2s ease-in-out infinite alternate;
         }
         @keyframes pulse-glow {
             0% {
-                box-shadow: 0 2px 4px rgba(231, 76, 60, 0.3);
+                box-shadow: 0 2px 4px rgba(118, 185, 0, 0.3);
             }
             100% {
-                box-shadow: 0 2px 8px rgba(231, 76, 60, 0.5);
+                box-shadow: 0 2px 8px rgba(118, 185, 0, 0.5);
             }
+        }
+        .project-tags {
+            margin-top: 8px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .project-tag {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .tag-fullstack {
+            background: linear-gradient(135deg, #76B900, #5a8c00);
+            color: white;
+            box-shadow: 0 2px 4px rgba(118, 185, 0, 0.3);
+        }
+        .tag-award {
+            background: linear-gradient(135deg, #76B900, #4a7c00);
+            color: white;
+            box-shadow: 0 2px 4px rgba(118, 185, 0, 0.3);
+        }
+        .tag-ai {
+            background: linear-gradient(135deg, #4a7c00, #2d5a00);
+            color: white;
+            box-shadow: 0 2px 4px rgba(74, 124, 0, 0.3);
+        }
+        .tag-opensource {
+            background: linear-gradient(135deg, #1a4a00, #0d2600);
+            color: white;
+            box-shadow: 0 2px 4px rgba(26, 74, 0, 0.3);
+        }
+        .journal-info {
+            margin-top: 10px;
+            padding: 12px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-left: 4px solid #76B900;
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+        .journal-name {
+            font-weight: bold;
+            color: #1a4a00;
+            margin-bottom: 8px;
+            font-size: 1em;
+        }
+        .impact-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .metric-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 8px;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+        .metric-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        .metric-value {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 2px;
+        }
+        .metric-label {
+            font-size: 0.8em;
+            color: #7f8c8d;
+            text-align: center;
+            line-height: 1.2;
+        }
+        .impact-factor-highlight {
+            background: linear-gradient(135deg, #e74c3c, #c0392b) !important;
+            color: white !important;
+        }
+        .impact-factor-highlight .metric-value {
+            color: white !important;
+            font-size: 1.4em;
+        }
+        .impact-factor-highlight .metric-label {
+            color: rgba(255,255,255,0.9) !important;
+            font-weight: 600;
+        }
+        .journal-metrics-compact {
+            margin-top: 5px;
+            font-size: 0.75em;
+            color: #7f8c8d;
+            line-height: 1.3;
+        }
+        .journal-metrics-compact .metric-highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .clickable-title {
+            cursor: pointer;
+            color: #1a4a00;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .clickable-title:hover {
+            color: #76B900;
+            text-decoration: underline;
+        }
+        .internal-link {
+            color: #76B900;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+        .internal-link:hover {
+            color: #5a8c00;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -224,28 +361,47 @@
                     treedy2022@icloud.com
                 </p>
                 <p>
-                    <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12C20,13.24 19.62,14.4 19,15.41L15.41,19C14.4,19.62 13.24,20 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12.5,7V12.5L17,14.92L16.25,16.17L11,13V7H12.5Z" /></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,12 0 0,0 12,2M12,4A8,8 0 0,1 20,12C20,13.24 19.62,14.4 19,15.41L15.41,19C14.4,19.62 13.24,20 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12.5,7V12.5L17,14.92L16.25,16.17L11,13V7H12.5Z" /></svg>
                     Shanghai, China
                 </p>
             </div>
 
             <div class="section">
                 <h3>Skills</h3>
-                <ul class="skills-list">
-                    <li>Large Language Models (LLM)</li>
-                    <li>PyTorch</li>
-                    <li>TensorFlow</li>
-                    <li>PaddlePaddle</li>
-                    <li>TensorRT</li>
-                    <li>RAG</li>
-                    <li>Vector Databases (Milvus)</li>
-                    <li>Full-Stack Development</li>
-                    <li>Vue.js</li>
-                    <li>FastAPI</li>
-                    <li>SQLAlchemy</li>
-                    <li>Docker & Kubernetes</li>
-                    <li>NLP</li>
-                </ul>
+                <div class="skills-category">
+                    <h4>Frontend</h4>
+                    <ul class="skills-list">
+                        <li>Vue.js</li>
+                        <li>JavaScript</li>
+                        <li>HTML/CSS</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h4>Backend & Cloud</h4>
+                    <ul class="skills-list">
+                        <li>Python</li>
+                        <li>FastAPI</li>
+                        <li>SQLAlchemy</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Cloud Services</li>
+                        <li>Vector Databases (Milvus)</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h4>Deep Learning & AI</h4>
+                    <ul class="skills-list">
+                        <li>Large Language Models (LLM)</li>
+                        <li>PyTorch</li>
+                        <li>TensorFlow</li>
+                        <li>PaddlePaddle</li>
+                        <li>TensorRT</li>
+                        <li>RAG</li>
+                        <li>NLP</li>
+                        <li>Transformer Architecture</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="section">
@@ -274,12 +430,12 @@
 
         <div class="right-column">
             <h1>Richard (Yaodong) Cui</h1>
-            <h2>Deep Learning Engineer</h2>
+            <h2>Target: Cloud Engineer</h2>
 
             <div class="section">
                 <h3>Profile</h3>
                 <p>
-                    A passionate AI engineer with 2 years of experience, specializing in Transformer architectures, LLM pre-training, and fine-tuning. My research achieved SOTA on public datasets and was published in an IEEE journal, gathering 28 citations. I am an enthusiastic open-source contributor with proven full-stack development skills, experienced in handling large-scale data, cloud services, and independently delivering front-end/back-end separated projects. An award winner at the Baidu/SegmentFault Hackathon, I am a collaborative team player dedicated to driving project success and continuously exploring algorithmic optimizations.
+                    AI algorithm engineer with 2+ years of experience specializing in Transformer architectures and large language model development. Published first-author research achieving SOTA results with 75 citations in <span class="internal-link" onclick="document.getElementById('publication-section').scrollIntoView({behavior: 'smooth'})">IEEE journals</span>. Proven full-stack developer with expertise in cloud-native technologies, containerization (Docker/Kubernetes), and scalable system architecture. Strong Python foundation with hands-on experience in international collaborative projects and production-grade AI deployments.
                 </p>
             </div>
 
@@ -287,7 +443,7 @@
                 <h3>Work Experience</h3>
                 <div class="job">
                     <div class="job-title">
-                        <span>Deep Learning Engineer</span>
+                        <span>AI Algorithm Engineer (Chef R&D Engineer II)</span>
                         <span class="date">July 2023 - Present</span>
                     </div>
                     <div class="company-location">SGS</div>
@@ -296,6 +452,7 @@
                         <li>Built a RAG and semantic vector retrieval service for a billion-entry database, deploying a clustered Milvus DB service.</li>
                         <li>Designed and implemented a comprehensive large model service platform using Vue.js and FastAPI, covering front-end UI, database design, RESTful APIs, and containerized deployment with Docker and Kubernetes.</li>
                         <li>Replicated and benchmarked state-of-the-art academic research using frameworks like PyTorch, TensorFlow, and TensorRT.</li>
+                        <li>Won 2nd Prize at the Baidu Cloud / SegmentFault Qianfan LLM Platform Hackathon with independent requirement analysis and full-stack architecture design.</li>
                     </ul>
                 </div>
                 <div class="job">
@@ -317,8 +474,30 @@
                 <h3>Project Experience</h3>
                 <div class="project">
                     <div class="job-title">
+                        <span>Large Language Model Basic Service Platform (Vue.js & FastAPI)</span>
+                        <span class="date">July 2023 - Apr 2024</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag tag-fullstack">Full-Stack</span>
+                        <span class="project-tag tag-ai">AI Platform</span>
+                    </div>
+                    <ul>
+                        <li>Architected and developed a cloud-native large model business service platform using Vue.js and FastAPI, implementing microservices architecture with containerized deployment.</li>
+                        <li>Built scalable front-end with Vue.js featuring JWT authentication, route protection, and responsive UI design for enterprise-level user management.</li>
+                        <li>Designed robust backend services with FastAPI and SQLAlchemy, implementing RESTful APIs and real-time streaming data processing capabilities.</li>
+                        <li>Orchestrated containerized deployment using Docker and Kubernetes with auto-scaling, load balancing, and service mesh for high availability and fault tolerance.</li>
+                        <li>Migrated inference workloads to cloud infrastructure, deploying Text-Embedding and Audio2Text services as serverless functions, reducing operational costs by 40%.</li>
+                        <li>Implemented CI/CD pipelines with automated testing, monitoring, and logging for production-ready cloud deployment.</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <div class="job-title">
                         <span>RAG-based Academic Talent Recommendation System</span>
                         <span class="date">Feb 2024 - Mar 2024</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag tag-fullstack">Full-Stack</span>
+                        <span class="project-tag tag-ai">AI/RAG</span>
                     </div>
                     <ul>
                         <li>Developed a full-stack system to provide precise talent matching by processing a billion-entry database with RAG-enhanced search.</li>
@@ -329,13 +508,19 @@
                 </div>
                  <div class="project">
                     <div class="job-title">
-                        <span>AI-Mask: Instant Messaging Language Polishing Tool (Hackathon Winner)</span>
+                        <span>AI-Mask: Instant Messaging Language Polishing Tool</span>
                         <span class="date">Nov 2023</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag tag-fullstack">Full-Stack</span>
+                        <span class="project-tag tag-award">2nd Prize</span>
+                        <span class="project-tag tag-ai">AI Tool</span>
                     </div>
                     <ul>
                         <li>Independently designed and developed an award-winning tool to enhance online communication quality.</li>
                         <li>Won 2nd Prize at the Baidu Cloud / SegmentFault Qianfan LLM Platform Hackathon.</li>
                         <li>Utilized a front-end/back-end separated architecture (Vue.js, FastAPI) for rapid development and deployment, delivering a high-performance, user-friendly experience.</li>
+                        <li>Effectively improved users' language expression capabilities in various instant messaging scenarios with high practical application value.</li>
                     </ul>
                 </div>
                  <div class="project">
@@ -343,34 +528,39 @@
                         <span>Happy June: College Entrance Exam Recommendation System</span>
                         <span class="date">May 2023 - June 2023</span>
                     </div>
+                    <div class="project-tags">
+                        <span class="project-tag tag-fullstack">Full-Stack</span>
+                        <span class="project-tag tag-opensource">Public Service</span>
+                    </div>
                     <ul>
                         <li>Developed a public-interest web application to recommend college choices based on exam scores and rankings.</li>
-                        <li>Scraped and processed 5 years of national college admission data using Selenium.</li>
+                        <li>Scraped and processed 5 years of national college admission data using Selenium framework, ensuring data completeness and accuracy.</li>
                         <li>Built a fast-responsive demo with Streamlit, achieving millisecond back-end and second-level online analysis responses.</li>
+                        <li>Responsible for small-scale business deployment and service launch, ensuring stable system operation for one month online.</li>
                     </ul>
                 </div>
             </div>
 
-             <div class="section">
+             <div class="section" id="publication-section">
                 <h3>Publication & Open Source</h3>
                 <div class="publication">
                     <div class="job-title">
-                        <span>TransNet: An End-to-End High-Precision Lossy Compression Algorithm</span>
+                        <a href="https://ieeexplore.ieee.org/document/9705497" target="_blank" class="clickable-title">TransNet: An End-to-End High-Precision Lossy Compression Algorithm</a>
                          <span class="date">Nov 2021 - Feb 2022</span>
                     </div>
+                    <div class="journal-metrics-compact">
+                        Published in <strong>IEEE Wireless Communications Letters</strong> • 
+                        Impact Factor: <span class="metric-highlight">5.5</span> • 
+                        CiteScore: <span class="metric-highlight">10.5</span> • 
+                        Article Influence: <span class="metric-highlight">1.753</span>
+                    </div>
                     <ul>
-                        <li>First author of a paper published in <strong>IEEE Wireless Communications Letters</strong> <span class="citation-badge">27 citations</span>.</li>
+                        <li>First author of a paper published in <strong>IEEE Wireless Communications Letters</strong> <span class="citation-badge">75 citations</span>.</li>
                         <li>Developed a novel algorithm for CSI feedback in FDD Massive MIMO systems using a standard Transformer architecture.</li>
                         <li>Achieved State-of-the-Art (SOTA) results on 8/10 metrics on the public COST 2100 dataset.</li>
                          <li>Actively maintain the open-source project and serve as a peer reviewer for IEEE journals (TWC, WCL, CL).</li>
                     </ul>
                     <div class="external-links">
-                        <a href="https://ieeexplore.ieee.org/document/9705497" target="_blank" class="link external-link">
-                            <svg class="link-icon" viewBox="0 0 24 24">
-                                <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
-                            </svg>
-                            IEEE Paper
-                        </a>
                         <a href="https://github.com/Treedy2020/TransNet" target="_blank" class="link external-link">
                             <svg class="link-icon" viewBox="0 0 24 24">
                                 <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"/>
